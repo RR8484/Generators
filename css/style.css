@@ -16,6 +16,19 @@ body {
     flex-direction: column;
     border-radius: 10px; /* Add border-radius */
   }
+
+  .genre-container {
+    background-color:#3A1F46;
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100vh;
+  }
+
+  h2 {
+    color: white;
+  }
   
   
   
@@ -24,9 +37,32 @@ body {
     font-size: 2em;
     color: #BF4C78;
     font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+
+  #genre-title {
+    color:#3A1F46;
     
   }
-  
+
+  .navbar-brand {
+    margin-left: 2rem;
+    color: white;
+  }
+
+  .active {
+    color:#BF4C78 !important;
+  }
+
+  .nav-link {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2rem;
+  }
+  .nav-custom {
+    background-color:#3A1F46 !important;
+    height: 5rem;
+  }
   #trope-form {
     text-align: center;
   }
