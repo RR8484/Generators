@@ -10,30 +10,52 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
     </head>
+
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-<div class="container">
-  <h1>Writing Tools for RPG Players</h1>
-  <div class="search-container">
-    <input type="text" id="search" placeholder="Search tropes...">
-  </div>
-  <div id="trope-form">
-    <button type="submit" id="trope-btn">Generate Tropes</button>
-    <button type="submit" id="genre-btn">MashUp Genres</button>
-    <button id="generateCreature">Generate Creature</button>
-  </div>
-  <p id="result"></p>
-</div>
-        
-        <script src="./scripts/main.js" async defer></script>
+        <nav class="navbar navbar-expand nav-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand custom-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Tropes</a>
+                        <a class="nav-link" href="#">Genres</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container-fluid genre-container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 id="main-title">Website Prototype</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img class= "img-fluid rounded-3 img-custom" src="pencil.jpg"/>
+                    </div>
+                    <div class="col-sm-7">
+                        <p class="content">
+                            Welcome to Placeholder, your one-stop destination for all the writing tools and generators you'll ever need! We're committed to providing writers of all levels with a treasure trove of resources to spark your creativity, ignite your imagination, and make your writing journey more enjoyable. Dive into our wide array of tools and generators, and let the inspiration flow. Happy writing!
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <iframe src = "generator.html" width = "100%" height ="850px" title="Generator">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </main>
+
     </body>
-</html>
-
-

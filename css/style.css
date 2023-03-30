@@ -9,7 +9,6 @@ body {
     max-width: 80%;
     margin: 40px auto; /* Add top margin */
     padding: 20px;
-    background-color: #3A1F46;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     min-height: calc(100vh - 200px); /* Update min-height to account for the added margin */
     display: flex;
@@ -17,17 +16,36 @@ body {
     border-radius: 10px; /* Add border-radius */
   }
 
-  .genre-container {
-    background-color:#3A1F46;
-    max-width: 80%;
-    margin: 40px auto;
-    padding: 20px;
+  .gen-container {
+    background-color: #3A1F46;
     border-radius: 10px;
-    height: 100vh;
+    max-width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 5rem 2rem;
   }
 
+  .content {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 2rem 2rem;
+  
+  }
+
+  .img-custom {
+    margin: 2rem;
+    width:90%;
+    height:auto;
+   
+  }
+  
+
   h2 {
-    color: white;
+    color: #BF4C78;
+    text-align: left;
+    margin-left: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
   }
   
   
@@ -35,15 +53,18 @@ body {
   h1 {
     text-align: center;
     font-size: 2em;
-    color: #BF4C78;
+    color: #BF4C78 !important;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
   }
 
-  #genre-title {
-    color:#3A1F46;
-    
+  #main-title {
+    margin:2rem auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    color: #3A1F46 !important;
   }
+
 
   .navbar-brand {
     margin-left: 2rem;
