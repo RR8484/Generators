@@ -143,6 +143,17 @@ body {
 
   }
 
+  .section-heading-dark {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px !important;
+    padding: 0 10px;
+    color:#3A1F46;
+    position: relative;
+    bottom: 2rem;
+  }
+
   .section1 {
     background-color: #AB6D88;
     position: relative;
