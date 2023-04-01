@@ -1,8 +1,25 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #D1C4E9;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+  }
+
+  header {
+    background-image: url('../bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* To make sure the content inside the body covers the whole viewport height */
+    min-height: 80vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(191, 76, 120, 0.7);
   }
   
   .container {
@@ -34,6 +51,32 @@ body {
       margin-top: 15rem;
     }
 
+    h3, .gen-tag, .section-heading {
+      font-family: 'Ubuntu', sans-serif;
+      color: #EDEDED;
+
+    }
+
+    h3 {
+      margin: 0 1.5rem 1rem 0;
+      font-size:1.5rem;
+      
+    }
+
+    .generator-wrapper {
+      display: flex;
+      justify-content:center;
+      margin-top: 0;
+
+    }
+
+    .cta {
+      font-size:1rem !important;
+      text-align: center;
+      margin: 1rem 1rem 4rem 1rem;
+      font-weight: bold;
+    }
+
    
     .enter-button {
       display: inline-block;
@@ -55,21 +98,56 @@ body {
     
 
   .gen-container {
-    background-color: #3A1F46;
+    background-color: rgba(58, 31, 70, 0.3);
     border-radius: 10px;
-    max-width: 80%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 5rem 2rem;
+    max-width: 65%;
+    margin: 7rem 2rem 2rem 2rem;
+    overflow-y: hidden;
+    position: relative;
+    right: -2rem;
   }
 
   .content {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
-    margin: 2rem 2rem;
+    margin: 2rem 12rem 2rem 1rem;
+    color: white;
+    position: relative;
+    left: -1.2rem;
+    width: 25%;
   
   }
 
+  .section-heading {
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 10px !important;
+    padding: 20px;
+    font-weight: normal;
+  }
+
+  .generator {
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+
+  .gen-tag {
+    padding: 3px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    margin-right: 2rem;
+    font-weight: bold;
+
+  }
+
+  .section1 {
+    background-color: #AB6D88;
+    position: relative;
+    bottom: 4rem;
+  }
   .img-custom {
     margin: 2rem;
     width:90%;
@@ -81,7 +159,7 @@ body {
   h2 {
     color: #BF4C78;
     text-align: left;
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
   }
@@ -97,12 +175,17 @@ body {
   }
 
   #main-title {
-    margin:2rem auto;
-    font-family: 'Ubuntu', sans-serif;
+    margin:12rem 2rem 2rem 5rem;
+    font-family: 'Cinzel Decorative', cursive;
     font-size: 3rem;
-    color: #3A1F46 !important;
+    color: whitesmoke!important;
+    text-align: left;
   }
 
+  .full-width-iframe {
+    position: relative;
+    bottom: 12rem;
+  }
 
   .navbar-brand {
     margin-left: 2rem;
@@ -118,12 +201,16 @@ body {
     font-family: 'Ubuntu', sans-serif;
     padding: 2rem;
   }
-  .nav-custom {
-    background-color:#3A1F46 !important;
+  .custom-nav, nav{
+    background-color:rgba(58, 31, 70, 0.3) !important;
     height: 5rem;
   }
   #trope-form {
     text-align: center;
+  }
+  .no-pad {
+    position: relative;
+    left: 7rem;
   }
   button {
     display: inline;
