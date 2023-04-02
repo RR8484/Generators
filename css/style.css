@@ -117,6 +117,7 @@ body {
     color: white;
     position: relative;
     left: -1.2rem;
+    bottom:2.5rem;
     width: 25%;
   
   }
@@ -139,7 +140,7 @@ body {
   .gen-tag {
     padding: 3px;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-right: 2rem;
     font-weight: normal;
     line-height: 1.6rem;
@@ -180,7 +181,7 @@ body {
   }
 
   #main-title {
-    margin:12rem 2rem 2rem 5rem;
+    margin:8rem 2rem 2rem 5rem;
     font-family: 'Cinzel Decorative', cursive;
     font-size: 3rem;
     color: whitesmoke!important;
@@ -262,30 +263,66 @@ body {
     border-color: #3A1F46;
   }
 
-  .resources {
-    background-color: #2e8b87;
-    background-image: linear-gradient(rgba(48, 161, 156, 0.5), rgba(48, 161, 156, 0.2)), url('../dark_mosaic.png');
+  
+
+ /* .section1 {
+    
+    position: relative;
+  }
+  
+  .section1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-image: linear-gradient(180deg, rgba(204, 156, 175, 1), rgba(204, 156, 175, 0));
+    pointer-events: none;
+  }
+  */
+  
+  .section1 {
+    background-image: linear-gradient(180deg, #c596a0, #cc9caf, #d6b3c6);
+    border-top: 5px solid #92cffe;
+    position: relative;
+  }
+  
+
+  /*.resources {
+    background: rgb(212,164,179);
+    background: linear-gradient(180deg, rgba(212,164,179,1) 0%, rgba(168,124,159,1) 25%, rgba(124,85,139,1) 50%, rgba(89,61,119,1) 75%, rgba(47,19,75,1) 100%);
     position: relative;
     bottom: 6rem;
     padding: 20px;
-  }
+  }*/
 
-  .resources::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8) !important; /* Adjust the last value (0.2) to control the opacity of the overlay */
-    z-index: -1;
+  .resources{
+    /*background-color: #783f70;*/
+    background-color:rgba(35, 6, 61, 0.7);
+    position: relative;
+    bottom: 4rem;
+    padding: 20px;
+    border-top: 5px solid #92cffe;
   }
+  
+  .background-gradient {
+    background-image:
+      radial-gradient(circle at center, rgba(29, 3, 46, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at center, rgba(76, 36, 98, 0.3) 20%, transparent 100%),
+      linear-gradient(135deg, rgba(1, 0, 6, 0.1), rgba(1, 0, 6, 0.4) 50%, transparent 80%);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
 
   .resources-blurb {
     margin: 2rem 5rem;
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.6rem;
     color: white;
+    font-size:1.2rem;
   }
 
   /* Style the unordered list */
@@ -299,11 +336,14 @@ body {
 /* Style the list items */
 .resources li {
   margin-bottom: 1rem; /* Add space between items */
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 /* Style the links */
 .resources a {
-  color: #60c1b3;
+  color: #1ce2fc;
   text-decoration: none; /* Remove default underline */
   transition: color 0.3s; /* Add a transition for color change */
 }
@@ -312,22 +352,7 @@ body {
 .resources a:hover {
   color: #7e3d93; /* Use a different color for hover */
 }
-  /*Experiments*/
-  .lighting-effect {
-    position: relative;
-  }
-
-  .lighting-effect::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
-    pointer-events: none;
-  }
+ 
 
   
   
