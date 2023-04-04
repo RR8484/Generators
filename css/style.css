@@ -52,15 +52,16 @@ body {
       margin-top: 15rem;
     }
 
-    h3, .gen-tag, .section-heading {
+    .section-heading {
       font-family: 'Ubuntu', sans-serif;
-      color: #EDEDED;
+      color: #755397;
 
     }
 
-    h3 {
+    h3, .gen-tag {
       margin: 0 1.5rem 1rem 0;
       font-size:1.5rem;
+      color: #e0e0e0;
       
     }
 
@@ -75,7 +76,9 @@ body {
       font-size:1rem !important;
       text-align: center;
       margin: 1rem 1rem 4rem 1rem;
-      font-weight: bold;
+      font-weight: normal;
+      background-color: #514EA6 !important;
+      color: #e0e0e0 !important;
     }
 
    
@@ -116,9 +119,9 @@ body {
     margin: 2rem 12rem 2rem 1rem;
     color: white;
     position: relative;
-    left: -1.2rem;
+    left: -2.5rem;
     bottom:2.5rem;
-    width: 25%;
+    width: 50%;
   
   }
 
@@ -140,7 +143,7 @@ body {
   .gen-tag {
     padding: 3px;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-right: 2rem;
     font-weight: normal;
     line-height: 1.6rem;
@@ -150,7 +153,6 @@ body {
 
   .section1 {
     /*background-color: #AB6D88;*/
-    background-image: linear-gradient(to right, #C2939C, #D4A4B3, #C2939C);
     position: relative;
     bottom: 4rem;
   }
@@ -195,20 +197,21 @@ body {
 
   .navbar-brand {
     margin-left: 2rem;
-    color: white;
+    color: #e0e0e0;
   }
 
   .active {
-    color:#BF4C78 !important;
+    color:#514EA6 !important;
   }
 
   .nav-link {
-    color: white;
+    color: #e0e0e0;
     font-family: 'Ubuntu', sans-serif;
     padding: 2rem;
   }
   .custom-nav, nav{
-    background-color:rgba(58, 31, 70, 0.3) !important;
+    background-color: rgba(17, 2, 38, 0.3) !important; /* Dark converted to rgba */
+    /*background-color:rgba(58, 31, 70, 0.3) !important;*/
     height: 5rem;
   }
   #trope-form {
@@ -283,8 +286,8 @@ body {
   */
   
   .section1 {
-    background-image: linear-gradient(180deg, #c596a0, #cc9caf, #d6b3c6);
-    border-top: 5px solid #92cffe;
+    background-color: #8768A6;
+    border-top: 5px solid #514EA6;
     position: relative;
   }
   
@@ -298,21 +301,15 @@ body {
   }*/
 
   .resources{
-    /*background-color: #783f70;*/
-    background-color:rgba(35, 6, 61, 0.7);
     position: relative;
     bottom: 4rem;
     padding: 20px;
-    border-top: 5px solid #92cffe;
+    border-top: 5px solid #514EA6;
   }
   
   .background-gradient {
-    background-image:
-      radial-gradient(circle at center, rgba(29, 3, 46, 0.3) 0%, transparent 50%),
-      radial-gradient(circle at center, rgba(76, 36, 98, 0.3) 20%, transparent 100%),
-      linear-gradient(135deg, rgba(1, 0, 6, 0.1), rgba(1, 0, 6, 0.4) 50%, transparent 80%);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #e0e0e0;
+    height: 75vh;
   }
   
   
@@ -321,8 +318,8 @@ body {
     margin: 2rem 5rem;
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.6rem;
-    color: white;
-    font-size:1.2rem;
+    color: #110226;
+    font-size:1rem;
   }
 
   /* Style the unordered list */
@@ -343,7 +340,7 @@ body {
 
 /* Style the links */
 .resources a {
-  color: #1ce2fc;
+  color: #755397;
   text-decoration: none; /* Remove default underline */
   transition: color 0.3s; /* Add a transition for color change */
 }

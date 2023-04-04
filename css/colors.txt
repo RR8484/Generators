@@ -1,0 +1,15 @@
+colors
+
+Dark: #110226
+Light: #E0F0F0
+Light2: #BBF2F2
+Light3: #C9CFF2
+Main-Light-Variant: #8768A6;
+Main: #755397;
+MedBlue: #514EA6
+
+Header and Footer: Dark (#110226) background with Light (#C9CFF2) or Light2 (#BBF2F2) text and logo.
+Main Content Area: Light (#C9CFF2) background with Dark (#110226) text.
+Headings: Main (#8768A6).
+Buttons and Links: Main (#8768A6) with Light (#C9CFF2) or Light2 (#BBF2F2) text. Use MedBlue (#514EA6) for secondary buttons or links.
+Borders and Separators: MedBlue (#514EA6).
