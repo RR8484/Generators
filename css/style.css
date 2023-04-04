@@ -309,7 +309,23 @@ body {
   
   .background-gradient {
     background-color: #e0e0e0;
-    height: 75vh;
+  }
+
+  .custom-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    width: 40%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .fant {
+    max-width: 70%;
+    height: auto;
+    margin: 3rem 2rem 2rem 5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
   }
   
   
@@ -343,6 +359,8 @@ body {
   color: #755397;
   text-decoration: none; /* Remove default underline */
   transition: color 0.3s; /* Add a transition for color change */
+  margin-top: 5rem;
+  padding: 20px;
 }
 
 /* Add hover effect for the links */
