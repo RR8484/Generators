@@ -54,9 +54,36 @@ body {
 
     .section-heading {
       font-family: 'Ubuntu', sans-serif;
-      color: #755397;
+      color: #755397 !important;
 
     }
+
+    .section-title {
+      font-family: 'Ubuntu', sans-serif;
+      color: #755397 !important;
+      font-size: 3rem;
+      margin-top: 3rem;
+      font-weight: normal;
+    }
+
+    .guide {
+      background-color: #e0e0e0;
+      margin-bottom: 2rem;
+      max-width: 100%;
+      overflow-x: hidden;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+     /* Add or adjust this property */
+    }
+
+    .guides-container {
+      margin: auto;
+      padding: auto;
+      max-width: 85%;
+    }
+    
 
     h3, .gen-tag {
       margin: 0 1.5rem 1rem 0;
@@ -111,6 +138,37 @@ body {
     position: relative;
     right: -2rem;
   }
+
+  .fableforge-guides ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .fableforge-guides ul li {
+    position: relative;
+    padding-left: 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #110226;
+    margin-bottom: 0.5em;
+    margin-left: 2rem;
+    margin-right: 5rem;
+    left: 3rem;
+  }
+  
+  .fableforge-guides ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: #8768A6;
+    border-radius: 50%;
+  }
+  
+  
 
   .content {
     font-family: 'Ubuntu', sans-serif;
@@ -198,6 +256,15 @@ body {
   .navbar-brand {
     margin-left: 2rem;
     color: #e0e0e0;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+
+  .introduction-image {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem auto; 
+    
   }
 
   .active {
@@ -210,9 +277,14 @@ body {
     padding: 2rem;
   }
   .custom-nav, nav{
-    background-color: rgba(17, 2, 38, 0.3) !important; /* Dark converted to rgba */
+    background-color: rgba(17, 2, 38, 0.3); /* Dark converted to rgba */
     /*background-color:rgba(58, 31, 70, 0.3) !important;*/
     height: 5rem;
+  }
+
+  /* custom nav for guides page with full opacity */
+  .custom-nav-guides {
+    background-color: rgba(17, 2, 38, 1);
   }
   #trope-form {
     text-align: center;
@@ -335,7 +407,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.6rem;
     color: #110226;
-    font-size:1rem;
+    font-size:1.2rem;
   }
 
   /* Style the unordered list */
@@ -352,6 +424,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
+  font-size: 1.2rem;
 }
 
 /* Style the links */
