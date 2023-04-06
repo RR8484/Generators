@@ -139,72 +139,6 @@ body {
     right: -2rem;
   }
 
-  .fableforge-guides ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .fableforge-guides ul li {
-    position: relative;
-    padding-left: 1.5em;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #110226;
-    margin-bottom: 0.5em;
-    margin-left: 2rem;
-    margin-right: 5rem;
-    left: 3rem;
-  }
-  
-  .fableforge-guides ul li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 6px;
-    height: 6px;
-    background-color: #8768A6;
-    border-radius: 50%;
-  }
-
-  ol {
-    list-style-type: none;
-    counter-reset: my-counter;
-  }
-
-  ol li {
-    counter-increment: my-counter;
-  }
-
-  .fableforge-guides ol {
-    counter-reset: item;
-    padding: 0;
-    margin-left: 2rem;
-  }
-  
-  .fableforge-guides ol li {
-    position: relative;
-    margin-left: 3rem;
-    padding-left: 1.5em;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: #110226;
-    margin-bottom: 0.5em;
-  }
-  
-  .fableforge-guides ol li::before {
-    content: counter(item) ".";
-    counter-increment: item;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-weight: bold;
-    color: #755397;
-  }
-  
-  
-  
 
   .content {
     font-family: 'Ubuntu', sans-serif;
@@ -300,10 +234,12 @@ body {
     height: auto;
     display: block;
     margin: 0 auto 2rem auto; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.3s ease-in-out;
+    border: 4px solid #514EA6;
   }
 
+  
   .active {
     color:#514EA6 !important;
   }
@@ -373,6 +309,10 @@ body {
   input[type="text"]:focus {
     outline: none;
     border-color: #3A1F46;
+  }
+
+  .floater {
+    float: right;
   }
 
   
@@ -448,7 +388,7 @@ body {
   }
 
   /* Style the unordered list */
-.resources ul {
+.resources > ul {
   list-style-type: none; /* Remove default bullets */
   padding-left: 0; /* Remove default left padding */
   margin-bottom: 2rem; /* Add space below the list */
@@ -456,7 +396,7 @@ body {
 }
 
 /* Style the list items */
-.resources li {
+.resources > li {
   margin-bottom: 1rem; /* Add space between items */
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
@@ -478,6 +418,72 @@ body {
   color: #7e3d93; /* Use a different color for hover */
 }
  
+.fableforge-guides ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.fableforge-guides ul li {
+  position: relative;
+  padding-left: 1.5em;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #110226;
+  margin-bottom: 0.5em;
+  margin-left: 2rem;
+  margin-right: 5rem;
+  left: 3rem;
+}
+
+.fableforge-guides ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #8768A6;
+  border-radius: 50%;
+}
+
+.fableforge-guides ol ul li {
+  font-size: 1.2rem !important;
+}
+
+/* Change this selector to target only top-level ol */
+.fableforge-guides > ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding: 0;
+  margin-left: 5rem;
+}
+
+/* Change this selector to target only top-level ol > li */
+.fableforge-guides > ol > li {
+  position: relative;
+  margin-left: 3rem !important;
+  padding-left: 1.5em;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #110226;
+  margin-bottom: 0.5em;
+}
+
+.fableforge-guides ol li {
+  font-size: 1.2rem;
+}
+
+/* Change this selector to target only top-level ol > li */
+.fableforge-guides > ol > li::before {
+  content: counter(item) ".";
+  counter-increment: item;
+  position: absolute;
+  left:0;
+  top: 0;
+  font-weight: bold;
+  color: #755397 !important;
+}
 
   
   
