@@ -237,6 +237,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.08);
     transition: box-shadow 0.3s ease-in-out;
     border: 4px solid #514EA6;
+    opacity: 0.9;
   }
 
   
@@ -434,8 +435,7 @@ body {
   margin-right: 5rem;
   left: 3rem;
 }
-
-.fableforge-guides ul li::before {
+.fableforge-guides ul li:not(:scope > ol > li)::before {
   content: "";
   position: absolute;
   left: 0;
@@ -451,16 +451,14 @@ body {
   font-size: 1.2rem !important;
 }
 
-/* Change this selector to target only top-level ol */
-.fableforge-guides > ol {
+.fableforge-guides ol {
   list-style-type: none;
   counter-reset: item;
   padding: 0;
   margin-left: 5rem;
 }
 
-/* Change this selector to target only top-level ol > li */
-.fableforge-guides > ol > li {
+.fableforge-guides ol li {
   position: relative;
   margin-left: 3rem !important;
   padding-left: 1.5em;
@@ -470,21 +468,20 @@ body {
   margin-bottom: 0.5em;
 }
 
-.fableforge-guides ol li {
-  font-size: 1.2rem;
-}
-
-/* Change this selector to target only top-level ol > li */
-.fableforge-guides > ol > li::before {
+.fableforge-guides ol li::before {
   content: counter(item) ".";
   counter-increment: item;
   position: absolute;
-  left:0;
+  left: 0;
   top: 0;
   font-weight: bold;
   color: #755397 !important;
 }
 
-  
-  
-  
+.subheading {
+  color: #514EA6;
+  margin: 2rem 2rem 2rem 5rem;
+}
+
+
+
